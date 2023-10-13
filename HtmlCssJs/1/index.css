@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(26, 25, 25);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.result {
+  background-color: #faf5f5;
+  color: rgb(9, 9, 9);
+  width: 75%;
+  padding: 25px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row button {
+  background-color: #181818;
+  color: #fff;
+  width: 75px;
+  height: 75px;
+  border-radius: 0 0 0 0;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  transition: 0.2s all linear;
+}
+
+.row button:hover {
+  background-color: #201f1f;
+}
+
+.row button:active {
+  background-color: #1c1b1b;
+}
+#Ac {
+  background-color: #1aacac;
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 75px;
+  height: 75px;
+}
+#plus,
+#minus,
+#multi,
+#divide {
+  background-color: gray;
+}
+
+#dot {
+  font-weight: 600;
+}

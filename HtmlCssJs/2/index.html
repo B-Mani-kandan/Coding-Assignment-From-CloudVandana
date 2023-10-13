@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Customer Survey Form</h1>
+      <form id="surveyForm">
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          required
+          placeholder="Enter Your Name"
+        />
+
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          id="lastName"
+          required
+          placeholder="Enter Your Last Name"
+        />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required />
+
+        <label for="country">Country:</label>
+        <select id="country" required>
+          <option value="" disabled selected>Select a country</option>
+          <option value="usa">USA</option>
+          <option value="India">India</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="gender">
+          <label>Gender:</label>
+          <input type="radio" name="Gender" id="male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="Gender" id="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="Gender" id="other" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <label for="profession">Profession:</label>
+        <input
+          type="text"
+          id="profession"
+          required
+          placeholder="Enter Your Profession"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter Your Email"
+        />
+
+        <label for="mobile">Mobile Number:</label>
+        <input
+          type="tel"
+          id="mobile"
+          required
+          placeholder="Enter Your Mobile Number"
+        />
+
+        <div class="btn-container">
+          <button type="button" onclick="submitForm()">Submit</button>
+          <button type="button" onclick="resetForm()">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="popup">
+      <div class="popup-content">
+        <h2>Customer Survey Form Data</h2>
+        <p>First Name: <span id="popupFirstName"></span></p>
+        <p>Last Name: <span id="popupLastName"></span></p>
+        <p>Date of Birth: <span id="popupDob"></span></p>
+        <p>Country: <span id="popupCountry"></span></p>
+        <p>Gender: <span id="popupGender"></span></p>
+        <p>Profession: <span id="popupProfession"></span></p>
+        <p>Email: <span id="popupEmail"></span></p>
+        <p>Mobile: <span id="popupMobile"></span></p>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
